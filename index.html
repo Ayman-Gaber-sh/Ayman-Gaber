@@ -75,8 +75,9 @@
         }
 
         /* Additional styling for professional look */
-        .contact-info p {
-            margin: 5px 0;
+        .contact-info {
+            text-align: left;
+            margin-top: 10px;
         }
 
         .skills-list, .languages-list {
@@ -100,13 +101,20 @@
         .section-content {
             margin-top: 10px;
         }
+
+        /* Two-column layout for the courses section */
+        .courses-list {
+            columns: 2;
+            column-gap: 20px;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Ayman Gaber Shehata</h1>
-        <p>Architect - BIM Modeler</p>
         <div class="contact-info">
+            <p>Architect - BIM Modeler</p>
             <p>Email: <a href="mailto:ayman.sh.arch@gmail.com">ayman.sh.arch@gmail.com</a></p>
             <p>Portfolio: <a href="https://www.behance.net/ayman-gaber">behance.net/ayman-gaber</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/ayman-gaber-989a03316/">linkedin.com/in/ayman-gaber-989a03316/</a></p>
@@ -127,7 +135,7 @@
         <div class="section-content">
             <p><strong>May 2025</strong> - Bachelor's Degree in Architecture</p>
             <p>Faculty of Fine Arts in Architecture, Alexandria University</p>
-            <p><em>Grade: Excellent (88%)</em></p>
+            <p><em>Grade: Excellent (85%)</em></p>
         </div>
     </section>
     
@@ -194,14 +202,13 @@
         <div class="section-content">
             <ul class="languages-list">
                 <li>English: Intermediate</li>
-                <!-- Add other languages if applicable -->
             </ul>
         </div>
     </section>
     
     <section>
         <h2>Courses</h2>
-        <div class="section-content">
+        <div class="section-content courses-list">
             <div class="course-item">
                 <p class="course-title">BIM Coordination - Essential Project</p>
                 <span class="certification">Autodesk, Kayan Academy</span>
@@ -219,46 +226,4 @@
                 <span class="certification">Udemy</span>
             </div>
             <div class="course-item">
-                <p class="course-title">BIM - Revit Architecture 2024: From Zero to Advanced Level</p>
-                <span class="certification">Udemy</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">Revit MEP 2022: From Zero to Hero</p>
-                <span class="certification">Udemy</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">Autodesk Revit: Beginner to Intermediate Level</p>
-                <span class="certification">Udemy</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">The Architectural Imagination</p>
-                <span class="certification">Harvard University</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">Master Artificial Intelligence for Architecture & Design A-Z</p>
-                <span class="certification">Udemy</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">Rhino 3D: From Zero to Advanced Level</p>
-                <span class="certification">Udemy</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">Revit and Lumion Workshop</p>
-                <span class="certification">Information Technology Institute (ITI)</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">Adobe Photoshop Architecture</p>
-                <span class="certification">Information Technology Institute (ITI)</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">Architecture Visualization</p>
-                <span class="certification">Information Technology Institute (ITI)</span>
-            </div>
-            <div class="course-item">
-                <p class="course-title">3D Modeling for Interior Design</p>
-                <span class="certification">Information Technology Institute (ITI)</span>
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+                <p class="course-title">BIM - Revit Architecture 2024: From Zero
