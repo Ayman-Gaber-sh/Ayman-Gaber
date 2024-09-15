@@ -12,6 +12,7 @@
             margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
+            line-height: 1.6;
         }
 
         header {
@@ -21,10 +22,18 @@
 
         h1 {
             color: #333;
+            font-size: 28px;
         }
 
         h2 {
             color: #007BFF;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
         }
 
         ul {
@@ -47,6 +56,18 @@
 
         a:hover {
             text-decoration: underline;
+        }
+
+        p, li {
+            margin: 0 0 10px;
+        }
+
+        /* Styling for courses' certification bodies */
+        .certification {
+            font-size: 14px;
+            color: #777; /* Gray color */
+            display: block;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -126,21 +147,48 @@
     <section>
         <h2>Courses</h2>
         <ul>
-            <li>Digital Engineering Program Diploma, KAITECH</li>
-            <li>BIM Coordination - Autodesk, Kayan Academy</li>
-            <li>Navisworks For BIM Coordinators - Autodesk, Kayan Academy</li>
-            <li>BIM Execution Plan (BEP) in BIM and Construction Projects - Udemy</li>
-            <li>BIM Coordinator Who Earns the Title? - Udemy</li>
-            <li>BIM - Revit Architecture 2024: From Zero to Advanced Level - Udemy</li>
-            <li>Revit MEP 2022: From Zero to Hero - Udemy</li>
-            <li>Autodesk Revit: Beginner to Intermediate Level - Udemy</li>
-            <li>The Architectural Imagination - Harvard University</li>
-            <li>Master Artificial Intelligence for Architecture & Design A-Z - Udemy</li>
-            <li>Rhino 3D: From Zero to Advanced Level - Udemy</li>
-            <li>Revit and Lumion Workshop - Information Technology Institute (ITI)</li>
-            <li>Adobe Photoshop Architecture - Information Technology Institute (ITI)</li>
-            <li>Architecture Visualization - Information Technology Institute (ITI)</li>
-            <li>3D Modeling for Interior Design - Information Technology Institute (ITI)</li>
+            <li>BIM Coordination - Essential Project
+                <span class="certification">Autodesk, Kayan Academy</span>
+            </li>
+            <li>Navisworks For BIM Coordinators
+                <span class="certification">Autodesk, Kayan Academy</span>
+            </li>
+            <li>BIM Execution Plan (BEP) in BIM and Construction Projects
+                <span class="certification">Udemy</span>
+            </li>
+            <li>BIM Coordinator Who Earns the Title?
+                <span class="certification">Udemy</span>
+            </li>
+            <li>BIM - Revit Architecture 2024: From Zero to Advanced Level
+                <span class="certification">Udemy</span>
+            </li>
+            <li>Revit MEP 2022: From Zero to Hero
+                <span class="certification">Udemy</span>
+            </li>
+            <li>Autodesk Revit: Beginner to Intermediate Level
+                <span class="certification">Udemy</span>
+            </li>
+            <li>The Architectural Imagination
+                <span class="certification">Harvard University</span>
+            </li>
+            <li>Master Artificial Intelligence for Architecture & Design A-Z
+                <span class="certification">Udemy</span>
+            </li>
+            <li>Rhino 3D: From Zero to Advanced Level
+                <span class="certification">Udemy</span>
+            </li>
+            <li>Revit and Lumion Workshop
+                <span class="certification">Information Technology Institute (ITI)</span>
+            </li>
+            <li>Adobe Photoshop Architecture
+                <span class="certification">Information Technology Institute (ITI)</span>
+            </li>
+            <li>Architecture Visualization
+                <span class="certification">Information Technology Institute (ITI)</span>
+            </li>
+            <li>3D Modeling for Interior Design
+                <span class="certification">Information Technology Institute (ITI)</span>
+            </li>
         </ul>
     </section>
 </body>
