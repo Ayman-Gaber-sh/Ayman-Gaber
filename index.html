@@ -1,8 +1,13 @@
-Thank you for sharing the Word document. I'll now ensure that all the courses from the attached file are included and that the formatting matches exactly as described in the original document.
+لإعطاء سيرتك الذاتية واجهة احترافية وجذابة، يمكننا إضافة بعض التصميمات الجمالية باستخدام **CSS** المتقدم لتحسين المظهر البصري، مع الحفاظ على سهولة القراءة والتنقل بين الأقسام. سأقوم بإضافة تأثيرات، تنسيق الألوان، الخطوط، وتوزيع المحتويات بشكل أفضل.
 
-Here is the updated HTML code with **all 15 courses** and the required formatting.
+### خطة التصميم:
+1. **اللون الأساسي**: استخدام لون هادئ وجذاب كالأزرق الداكن (#2C3E50) مع لمسات من الألوان الرمادية.
+2. **الخطوط**: استخدام خط جذاب مثل Arial، مع تنسيق حجم النصوص الرئيسية والفرعية.
+3. **التوزيع**: تنسيق المعلومات في أقسام محددة ومنظمة.
+4. **العناصر الجمالية**: إضافة حدود وخطوط فواصل أنيقة بين الأقسام.
+5. **تباعد أفضل**: جعل الأقسام متباعدة بشكل متساوٍ لتعزيز السهولة البصرية.
 
-### Complete and Updated HTML:
+### الكود المعدل:
 
 ```html
 <!DOCTYPE html>
@@ -23,74 +28,68 @@ Here is the updated HTML code with **all 15 courses** and the required formattin
 
         /* Main container styling */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
 
-        /* Header and section title styling */
-        h1, h2, h3 {
+        /* Header styling */
+        h1 {
             color: #2C3E50;
-        }
-
-        /* Paragraph styling */
-        p {
-            font-size: 16px;
-            color: #333;
-        }
-
-        /* Links styling */
-        .contact-info a {
-            color: #2980B9;
-            text-decoration: none;
-        }
-
-        /* Section spacing */
-        .section {
-            margin-bottom: 20px;
-        }
-
-        /* Section header with border */
-        .section h2 {
-            border-bottom: 2px solid #2C3E50;
-            padding-bottom: 10px;
-        }
-
-        /* Unordered list styling */
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-
-        /* Unordered list item spacing */
-        ul li {
+            text-align: center;
+            font-size: 36px;
             margin-bottom: 10px;
         }
 
-        /* Styling for the course provider names */
-        .course-provider {
-            font-size: 12px;
-            color: #777;
-            display: block;
-            margin-left: 20px;
-        }
-
-        /* Center alignment for title sections */
-        h1 {
+        .sub-title {
             text-align: center;
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
         }
 
-        /* Left alignment for contact info */
+        /* Contact info styling */
         .contact-info {
             text-align: left;
             margin-bottom: 20px;
         }
 
-        /* Section alignment */
-        .section h2, .section p, .section ul {
-            text-align: left;
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #2980B9;
+            text-decoration: none;
+        }
+
+        /* Section titles */
+        h2 {
+            color: #2C3E50;
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2980B9;
+            padding-bottom: 10px;
+        }
+
+        /* Section content */
+        p, ul {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Soft skills list */
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
 
         /* Courses section - two columns */
@@ -105,16 +104,34 @@ Here is the updated HTML code with **all 15 courses** and the required formattin
             margin-bottom: 20px;
         }
 
+        /* Styling for the course provider names */
+        .course-provider {
+            font-size: 12px;
+            color: #7f8c8d;
+            display: block;
+            margin-left: 20px;
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 40px;
+        }
+
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Ayman Gaber Shehata</h1>
+        <div class="sub-title">Architect - BIM Modeler</div>
+
         <div class="contact-info">
             <p>Email: <a href="mailto:ayman.sh.arch@gmail.com">ayman.sh.arch@gmail.com</a></p>
-            <p>Portfolio: <a href="https://www.behance.net/ayman-gaber">Behance</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ayman-gaber-989a03316/">LinkedIn</a></p>
+            <p>Portfolio: <a href="https://www.behance.net/ayman-gaber">https://www.behance.net/ayman-gaber</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ayman-gaber-989a03316/">https://www.linkedin.com/in/ayman-gaber-989a03316/</a></p>
             <p>Mobile: 01281690248 - 01013427616</p>
             <p>Address: Alexandria, King Marriot St.20</p>
         </div>
@@ -126,26 +143,26 @@ Here is the updated HTML code with **all 15 courses** and the required formattin
 
         <div class="section">
             <h2>Education</h2>
-            <p>May 2025 Bachelor's Degree in Architecture, Faculty of Fine Arts, Alexandria University (Grade: Excellent 85%)</p>
+            <p>May 2025 - Bachelor's Degree in Architecture, Faculty of Fine Arts, Alexandria University (Grade: Excellent 85%)</p>
         </div>
 
         <div class="section">
             <h2>Training</h2>
-            <h3>Designer Architect (Saudi Group Office)</h3>
+            <h3>Designer Architect - Saudi Group Office</h3>
             <p>1st June 2024 – 2nd July 2024</p>
             <ul>
                 <li>Created functional and aesthetically pleasing building designs that met the needs and preferences of clients.</li>
                 <li>Worked closely with clients, engineers, and other professionals to develop detailed plans and oversee projects from concept to completion.</li>
             </ul>
 
-            <h3>Technical Office Engineer (Talaat Moustafa Group)</h3>
+            <h3>Technical Office Engineer - Talaat Moustafa Group</h3>
             <p>2nd July 2023 – 2nd Aug 2023</p>
             <ul>
                 <li>Prepared detailed technical drawings and documentation for construction projects, ensuring they met design specifications and standards.</li>
                 <li>Coordinated with various teams to manage project schedules and budgets, providing technical support during the construction phase to resolve any issues.</li>
             </ul>
 
-            <h3>Site Engineer (Talaat Moustafa Group)</h3>
+            <h3>Site Engineer - Talaat Moustafa Group</h3>
             <p>2nd July 2022 – 2nd Aug 2022</p>
             <ul>
                 <li>Oversaw daily operations on the construction site, ensuring everything was done according to plans and specifications.</li>
@@ -156,25 +173,25 @@ Here is the updated HTML code with **all 15 courses** and the required formattin
         <div class="section">
             <h2>Soft Skills</h2>
             <ul>
-                <li>Excellent communication and teamwork abilities, enabling effective collaboration with clients, engineers, and project stakeholders.</li>
-                <li>Strong problem-solving skills, adept at addressing on-site issues and providing innovative solutions.</li>
-                <li>Exceptional time management and organizational skills, ensuring projects are completed on schedule and within budget.</li>
-                <li>Detail-oriented with a keen eye for design, ensuring high standards of quality and precision in all work.</li>
-                <li>Adaptable and quick learner, capable of mastering new tools and technologies to enhance project outcomes.</li>
+                <li>Excellent communication and teamwork abilities.</li>
+                <li>Strong problem-solving skills, adept at providing innovative solutions.</li>
+                <li>Exceptional time management and organizational skills.</li>
+                <li>Detail-oriented with a keen eye for design and precision.</li>
+                <li>Adaptable and quick learner of new tools and technologies.</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Technical Skills</h2>
             <ul>
-                <li>Revit: Create and manage detailed 3D building models and construction documentation in architecture and engineering.</li>
-                <li>Navisworks Manage: Integrate 3D models from different disciplines, detect clashes, and coordinate project reviews to ensure smooth construction processes.</li>
-                <li>AutoCAD: Generate accurate 2D and 3D technical drawings for architectural and engineering designs, ensuring precision and clarity.</li>
-                <li>Microsoft Office: Utilize for document creation, data analysis, presentations, and communication across various projects.</li>
-                <li>Lumion: Produce stunning real-time 3D visualizations and renderings to bring architectural designs to life with dynamic lighting and materials.</li>
-                <li>Photoshop: Edit and enhance images and graphics, applying creative effects and adjustments to meet design requirements.</li>
-                <li>Rhino: Create precise 3D models for diverse design projects, from architectural forms to intricate product designs and prototyping.</li>
-                <li>ArcGIS Pro: Analyze and visualize geographic data, creating detailed maps and conducting spatial analyses to support informed decision-making.</li>
+                <li>Revit: Create and manage detailed 3D building models.</li>
+                <li>Navisworks Manage: Integrate 3D models and coordinate project reviews.</li>
+                <li>AutoCAD: Generate accurate 2D and 3D technical drawings.</li>
+                <li>Microsoft Office: Utilize for presentations and document creation.</li>
+                <li>Lumion: Create 3D visualizations and renderings with dynamic lighting.</li>
+                <li>Photoshop: Edit and enhance images for design aesthetics.</li>
+                <li>Rhino: Create precise 3D models for diverse design projects.</li>
+                <li>ArcGIS Pro: Analyze and visualize geographic data for detailed mapping.</li>
             </ul>
         </div>
 
@@ -195,13 +212,6 @@ Here is the updated HTML code with **all 15 courses** and the required formattin
                         <li>Navisworks For BIM Coordinators <span class="course-provider">(Autodesk, Kayan Academy)</span></li>
                         <li>BIM Execution Plan (BEP) in BIM and Construction Projects <span class="course-provider">(Udemy)</span></li>
                         <li>BIM Coordinator Who Earns the Title? <span class="course-provider">(Udemy)</span></li>
-                        <li>BIM- Revit Architecture 2024 - From Zero to Advanced Level <span class="course-provider">(Udemy)</span></li>
-                        <li>Revit MEP 2022 from Zero to Hero <span class="course-provider">(Udemy)</span></li>
                     </ul>
                 </div>
-                <div class="course-column">
-                    <ul>
-                        <li>Autodesk Revit - Beginner to Intermediate Level <span class="course-provider">(Udemy)</span></li>
-                        <li>The Architectural Imagination <span class="course-provider">(Harvard University Online Initiative)</span></li>
-                        <li>Master Artificial Intelligence for Architecture & Design A-Z <span class="course-provider">(Udemy)</span></li>
-                        <li
+               
